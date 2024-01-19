@@ -36,7 +36,5 @@ class LanguageManager {
             .forEach {
                 $0.languageDidChange(to: selectedLanguage)
             }
-        
-        
     }
 }

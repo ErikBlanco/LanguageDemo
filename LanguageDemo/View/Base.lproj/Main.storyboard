@@ -8,10 +8,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="TSW-rC-TJs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DsM-P4-PYm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ArE-9B-5o5">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uuf-Ri-t1M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGD-gM-4yw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.572519083969468" y="-2.1126760563380285"/>
+        </scene>
         <!--First-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LandingPageViewController" customModule="LanguageDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="LanguageDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,6 +47,9 @@
                                         <rect key="frame" x="0.0" y="46.333333333333314" width="333" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                        <connections>
+                                            <action selector="nextBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4DH-1D-sOA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -78,6 +99,9 @@
                                         <rect key="frame" x="0.0" y="92.666666666666629" width="333" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                        <connections>
+                                            <action selector="nextBtnTapped:" destination="flM-lu-Gdo" eventType="touchUpInside" id="GPu-7Y-dl2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -92,30 +116,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Second" id="YlY-6g-5jd"/>
                     <connections>
+                        <outlet property="localizedTextLabel" destination="bIE-dS-FML" id="tSN-Va-pgK"/>
                         <segue destination="kiO-kQ-fo5" kind="show" identifier="thirdSegueId" id="Mvg-We-JfG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eub-kf-BRr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1785" y="-2"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="TSW-rC-TJs">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DsM-P4-PYm" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ArE-9B-5o5">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uuf-Ri-t1M"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KGD-gM-4yw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="75.572519083969468" y="-2.1126760563380285"/>
         </scene>
         <!--Third-->
         <scene sceneID="Trh-GO-yGS">
@@ -138,6 +145,9 @@
                                         <rect key="frame" x="0.0" y="46.333333333333314" width="333" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                        <connections>
+                                            <action selector="nextBtnTapped:" destination="kiO-kQ-fo5" eventType="touchUpInside" id="mj8-r4-FMd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -152,6 +162,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Third" id="0IQ-eu-uKz"/>
                     <connections>
+                        <outlet property="localizedTextLabel" destination="Iie-sI-3WV" id="z7j-iY-y7s"/>
                         <segue destination="cFh-QG-Llt" kind="show" identifier="fourthSegueId" id="KjW-j9-aEw"/>
                     </connections>
                 </viewController>
@@ -168,12 +179,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="7pI-dl-D5U">
-                                <rect key="frame" x="30" y="409" width="333" height="34.333333333333314"/>
+                                <rect key="frame" x="30" y="385.66666666666669" width="333" height="80.666666666666686"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbN-AL-mT3">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3z-KT-fFr">
-                                        <rect key="frame" x="0.0" y="0.0" width="333" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="46.333333333333314" width="333" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Change language"/>
+                                        <connections>
+                                            <action selector="changeLanguageBtnTapped:" destination="cFh-QG-Llt" eventType="touchUpInside" id="f8h-ID-mmu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -187,6 +207,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Fourth" id="P6J-cU-2Cq"/>
+                    <connections>
+                        <outlet property="currentLanguageLabel" destination="pbN-AL-mT3" id="aE8-Tr-a3b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNR-EK-UrO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
