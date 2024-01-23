@@ -1,0 +1,51 @@
+
+/* Class = "UINavigationItem"; title = "Third"; ObjectID = "0IQ-eu-uKz"; */
+"0IQ-eu-uKz.title" = "Third";
+
+/* Class = "UIButton"; configuration.title = "Next"; ObjectID = "9rE-3r-4G3"; */
+"9rE-3r-4G3.configuration.title" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9rE-3r-4G3"; */
+"9rE-3r-4G3.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Iie-sI-3WV"; */
+"Iie-sI-3WV.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Fourth"; ObjectID = "P6J-cU-2Cq"; */
+"P6J-cU-2Cq.title" = "Fourth";
+
+/* Class = "UIButton"; configuration.title = "Next"; ObjectID = "W81-vB-dJi"; */
+"W81-vB-dJi.configuration.title" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "W81-vB-dJi"; */
+"W81-vB-dJi.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Change language"; ObjectID = "Y3z-KT-fFr"; */
+"Y3z-KT-fFr.configuration.title" = "Change language";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Y3z-KT-fFr"; */
+"Y3z-KT-fFr.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Second"; ObjectID = "YlY-6g-5jd"; */
+"YlY-6g-5jd.title" = "Second";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bIE-dS-FML"; */
+"bIE-dS-FML.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bY2-Yh-Bke"; */
+"bY2-Yh-Bke.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "First"; ObjectID = "dmi-10-Y8v"; */
+"dmi-10-Y8v.title" = "First";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pbN-AL-mT3"; */
+"pbN-AL-mT3.text" = "Label";
+
+/* Class = "UILabel"; text = "Non-observed label"; ObjectID = "tZH-Hy-TTh"; */
+"tZH-Hy-TTh.text" = "Non-observed label";
+
+/* Class = "UIButton"; configuration.title = "Next"; ObjectID = "xgC-cS-8lg"; */
+"xgC-cS-8lg.configuration.title" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xgC-cS-8lg"; */
+"xgC-cS-8lg.normalTitle" = "Button";
